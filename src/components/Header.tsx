@@ -7,7 +7,7 @@ import SearchBar from "./SearchBar";
 function Header() {
   return (
     <div className="border-b">
-      <div className="flex flex-col items-center gap-4 p-4 lg:flex-row">
+      <div className="flex flex-col lg:flex-row items-center gap-4 p-4">
         <div className="flex items-center justify-between w-full lg:w-auto">
           <Link href="/" className="font-bold shrink-0">
             <Image
@@ -38,7 +38,7 @@ function Header() {
           <SearchBar />
         </div>
 
-        <div className="hidden ml-auto lg:block">
+        <div className="hidden lg:block ml-auto">
           <SignedIn>
             <div className="flex items-center gap-3">
               <Link href="/seller">
@@ -66,7 +66,7 @@ function Header() {
         </div>
 
         {/* Mobile Action Buttons */}
-        <div className="flex justify-center w-full gap-3 lg:hidden">
+        <div className="lg:hidden w-full flex justify-center gap-3">
           <SignedIn>
             <Link href="/seller" className="flex-1">
               <button className="w-full bg-blue-600 text-white px-3 py-1.5 text-sm rounded-lg hover:bg-blue-700 transition">
