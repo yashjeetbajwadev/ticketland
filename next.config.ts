@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
       { hostname: "determined-bison-894.convex.cloud", protocol: "https" },
+      { hostname: "grandiose-cuttlefish-758.convex.cloud", protocol: "http" },
     ],
   },
 };
